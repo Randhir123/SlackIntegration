@@ -12,7 +12,7 @@ import org.json.JSONObject;
 
 import java.util.logging.Level;
 
-public class JerseyClientDemo {
+public class SlackIntegrationDemo {
 
     private static final String REST_URI
             = "<slack-url>";
@@ -36,7 +36,7 @@ public class JerseyClientDemo {
     }
 
     public static void main(String[] args) throws JsonProcessingException {
-        Response response = new JerseyClientDemo().sendAlert(new Alert("1", "SI", "Ransomware Alert", "123"));
+        Response response = new SlackIntegrationDemo().sendAlert(new Alert("1", "SI", "Ransomware Alert", "123"));
         System.out.println(response);
     }
 }
